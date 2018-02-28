@@ -5,11 +5,11 @@
     var userCreated = false
     var webrtc = new SimpleWebRTC({
         // the id/element dom element that will hold "our" video
-        localVideoEl: '',
+        localVideoEl: 'localVideo',
         // the id/element dom element that will hold remote videos
-        remoteVideosEl: '',
+        remoteVideosEl: 'remoteVideos',
         // immediately ask for camera access
-        autoRequestMedia: false,
+        autoRequestMedia: true,
         //set default nickname to Peer
         nick: 'Peer',
         receiveMedia: {
